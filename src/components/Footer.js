@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer>
+        <footer className="row">
             <p>Footer</p>
         </footer>
     );
