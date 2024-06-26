@@ -3,11 +3,11 @@ import logo from "./../assets/Logo.svg";
 
 export function Header() {
     return (
-        <header className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 sm:col-span-4">
+        <header className="flex sm:justify-start justify-between items-center gap-4 py-6 px-4 w-full">
+            <div className="flex-1">
                 <img src={logo} alt="logo" />
             </div>
-            <div className="col-span-12 sm:col-span-8">
+            <div className="flex-1">
                 <Nav />
             </div>
         </header>

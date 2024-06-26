@@ -1,13 +1,28 @@
 import './App.css';
 import { Header } from './components/Header';
-import Main from './components/Main';
 import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import BookingPage from './BookingPage';
+import { TimeSpanProvider } from './hooks/useTimeSpan';
+import ConfirmationPage from './ConfirmationPage';
 
 function App() {
+  
+
   return (
-    <div className='container mx-auto px-4'>
+    <div className='container mx-auto sm:px-4 sm:w-[80%] w-full'>
         <Header />
-        <Main />
+        <main className="col-12">
+        <TimeSpanProvider>
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/booking' element={<BookingPage />} />
+            <Route path='/confirmation' element={<ConfirmationPage />} />
+        </Routes>
+        </TimeSpanProvider>
+        </main>
+
         <Footer />
     </div>
   );
