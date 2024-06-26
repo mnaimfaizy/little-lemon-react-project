@@ -4,7 +4,7 @@ import restaurantChefB from './../assets/restaurant-chef-B.jpg';
 
 const AboutUs = () => {
   return (
-    <section className="flex sm:flex-row flex-col items-center justify-between sm:p-16 p-8">
+    <section className="flex sm:flex-row flex-col items-center justify-between sm:px-[20%] px-10 py-20">
       <div className="flex-1">
         <h1 className="text-4xl font-bold">About Us</h1>
         <p className="text-sm mt-1">Our Journey</p>

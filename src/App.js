@@ -11,9 +11,9 @@ function App() {
   
 
   return (
-    <div className='container mx-auto sm:px-4 sm:w-[80%] w-full'>
+    <div className='w-full'>
         <Header />
-        <main className="col-12">
+        <main>
         <TimeSpanProvider>
         <Routes>
             <Route path='/' element={<HomePage />} />

@@ -2,7 +2,7 @@ import logo from './../assets/Logo.svg';
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-800 text-white p-8">
+        <footer className="bg-gray-800 text-white sm:px-[20%] px-10 py-16">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
                 {/* First Column */}
                 <div>

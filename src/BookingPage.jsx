@@ -5,10 +5,10 @@ import HeroSection from './components/HeroSection'
 const BookingPage = () => {
 
   return (
-    <div>
+    <>
         <HeroSection withButton={false} />
         <BookingForm />
-    </div>
+    </>
   )
 }
 

@@ -18,8 +18,8 @@ function BookingForm() {
     const navigate = useNavigate()
 
     return (
-        <div className='sm:p-16 p-8'>
-      <h1 className='text-2xl text-center pb-4'>Booking Form</h1>
+      <section className='sm:p-16 p-8'>
+      <h1 className='text-2xl text-center pb-4'>TABLE RESERVATION</h1>
       <Formik
         initialValues={{ date: '', time: '', guests: 1, occasion: '' }}
         validationSchema={bookingValidationSchema}
@@ -62,7 +62,7 @@ function BookingForm() {
           </Form>
         )}
       </Formik>
-    </div>
+    </section>
 
     );
 }

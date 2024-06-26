@@ -6,12 +6,12 @@ import Specials from './components/Specials'
 
 const HomePage = () => {
   return (
-    <div>
+    <>
         <HeroSection />
         <Specials />
         <Testimonial />
         <AboutUs />
-    </div>
+    </>
   )
 }
 
