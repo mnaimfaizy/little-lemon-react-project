@@ -4,7 +4,7 @@ import Button from './Button';
 
 function HeroSection({ withButton = true }) {
     return (
-      <div className="flex sm:flex-row flex-col sm:gap-1 gap-4 items-center justify-between p-16 bg-secondary">
+      <section className="flex sm:flex-row flex-col sm:gap-1 gap-4 items-center justify-between p-16 bg-secondary">
         <div className="flex-1 text-white">
           <h1 className="text-4xl font-bold ">Little limeon</h1>
           <p className="text-sm mt-1 ">Location Here</p>
@@ -14,7 +14,7 @@ function HeroSection({ withButton = true }) {
         <div className="flex-1 flex justify-end">
           <img src={greekSalad} alt="Hero" className="w-[280px] rounded-2xl" />
         </div>
-      </div>
+      </section>
     );
   }
 

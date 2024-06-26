@@ -23,14 +23,14 @@ export default function Specials() {
   ];
 
   return (
-    <div className="p-16">
+    <section className="p-16">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-3xl font-bold">Specials</h2>
         <Button title={'View All'} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {specials.map((special, index) => (
-          <div key={index} className="border rounded-lg">
+          <article key={index} className="border rounded-lg">
             <img src={special.image} alt={special.title} className="w-full h-auto object-contain" />
             <div className="p-4">
             <div className="flex justify-between items-center mt-2">
@@ -43,9 +43,9 @@ export default function Specials() {
             </div>
 
             </div>
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

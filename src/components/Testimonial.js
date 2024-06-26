@@ -9,7 +9,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="p-16">
+    <section className="p-16">
       <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {testimonials.map((testimonial, index) => (
@@ -23,7 +23,7 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
